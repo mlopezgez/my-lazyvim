@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mati's LazyVim Configuration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💤 Mati's LazyVim Configuration</h1>
+            <p class="subtitle">A personalized Neovim setup for Python, Rust, and DevOps</p>
+            <div class="links">
+                <a href="https://github.com/mlopezgez/my-lazyvim" class="btn btn-primary">View on GitHub</a>
+                <a href="#installation" class="btn btn-secondary">Get Started</a>
+            </div>
+        </header>
+
+        <section class="features">
+            <h2>✨ Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Development</h3>
+                    <p>Integrated with claudecode.nvim for Claude-native coding assistance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🐍</div>
+                    <h3>Enhanced Python Environment</h3>
+                    <p>Advanced LSP with ty, automatic virtual environment selection, and Poetry support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🦀</div>
+                    <h3>First-class Rust Support</h3>
+                    <p>Configured with rustaceanvim for robust Rust development</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Beautiful UI/UX</h3>
+                    <p>Powered by snacks.nvim and Catppuccin colorscheme</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="installation">
+            <h2>🚀 Installation</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Back up your current config</h3>
+                        <pre><code>mv ~/.config/nvim ~/.config/nvim.bak</code></pre>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Clone this repository</h3>
+                        <pre><code>git clone https://github.com/mlopezgez/my-lazyvim.git ~/.config/nvim</code></pre>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Open Neovim</h3>
+                        <pre><code>nvim</code></pre>
+                        <p class="note">Lazy.nvim will automatically install all defined plugins</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="keymaps">
+            <h2>⌨️ Custom Keymaps</h2>
+            <div class="keymap-sections">
+                <div class="keymap-section">
+                    <h3>AI (Claude Code)</h3>
+                    <table>
+                        <tr>
+                            <td><code>&lt;leader&gt;ac</code></td>
+                            <td>Toggle Claude terminal</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;leader&gt;ar</code></td>
+                            <td>Resume previous Claude session</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;leader&gt;as</code></td>
+                            <td>Send visual selection to Claude</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;leader&gt;aa</code></td>
+                            <td>Accept Claude's diff changes</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="keymap-section">
+                    <h3>Diagnostics & Clipboard</h3>
+                    <table>
+                        <tr>
+                            <td><code>&lt;leader&gt;cy</code></td>
+                            <td>Copy diagnostic under cursor</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;leader&gt;cY</code></td>
+                            <td>Copy all diagnostics on line</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;F13&gt;</code></td>
+                            <td>Yank to system clipboard</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;F14&gt;</code></td>
+                            <td>Paste from system clipboard</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Built with ❤️ using <a href="https://github.com/LazyVim/LazyVim" target="_blank">LazyVim</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
