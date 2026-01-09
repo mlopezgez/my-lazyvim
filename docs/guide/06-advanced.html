@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Topics | Vim Ninja Guide</title>
     <meta name="description" content="Explore Rust development, terminal integration, UI customization, and advanced workflow patterns for power users.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/guide.css">
 </head>
@@ -191,12 +192,24 @@
                         <tr>
                             <th>Keybind</th>
                             <th>Description</th>
+                            <th>When to Use</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><kbd>Ctrl+/</kbd></td>
                             <td>Toggle floating terminal</td>
+                            <td>Open/close terminal window</td>
+                        </tr>
+                        <tr>
+                            <td><kbd>Ctrl+\</kbd> <kbd>Ctrl+n</kbd></td>
+                            <td>Exit to Normal Mode</td>
+                            <td>Use Vim motions in terminal (for copying, navigating output)</td>
+                        </tr>
+                        <tr>
+                            <td><kbd>i</kbd> or <kbd>a</kbd></td>
+                            <td>Return to Terminal Mode</td>
+                            <td>After using Normal Mode, return to typing commands</td>
                         </tr>
                     </tbody>
                 </table>
