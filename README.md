@@ -1,5 +1,7 @@
 # 💤 Mati's LazyVim Configuration
 
+[![Documentation](https://img.shields.io/badge/📖_Vim_Ninja_Guide-blue?style=for-the-badge)](https://mlopezgez.github.io/my-lazyvim)
+
 This is a personalized Neovim configuration built on top of [LazyVim](https://github.com/LazyVim/LazyVim). It is optimized for Python, Rust, and DevOps workflows, featuring AI integration and customized clipboard behavior.
 
 ## ✨ Features
