@@ -6,6 +6,9 @@ return {
     ops = {
       -- Use the full path to claude
       terminal_cmd = "~/.local/bin/claude",  -- npm global on Apple Silicon
+      terminal = {
+        split_width_percentage = 0.3,
+      }
     },
     keys = {
       { "<leader>a", nil, desc = "AI/Claude Code" },
