@@ -6,14 +6,14 @@ This is a personalized Neovim configuration built on top of [LazyVim](https://gi
 
 ## ✨ Features
 
-- **AI-Powered Development**: Integrated with [claudecode.nvim](https://github.com/coder/claudecode.nvim) for Claude-native coding assistance.
+- **AI-Powered Development**: Integrated with [claudecode.nvim](https://github.com/coder/claudecode.nvim) and [opencode.nvim](https://github.com/NickvanDyke/opencode.nvim) for AI-native coding assistance.
 - **Enhanced Python Environment**:
   - Uses `ty` as the primary LSP server.
   - Automatic virtual environment selection and LSP switching via `venv-selector.nvim`.
   - Supports Poetry and local `.venv` structures.
 - **First-class Rust Support**: Configured with `rustaceanvim` for a robust Rust development experience.
 - **UI & UX**: Powered by `snacks.nvim` for a fast file explorer, pickers, and smooth animations.
-- **Colorscheme**: [Catppuccin](https://github.com/catppuccin/nvim) (Mocha/Macchiato).
+- **Colorscheme**: [Gruvbox Material](https://github.com/sainnhe/gruvbox-material) (hard/dark).
 
 ## 🛠️ Custom Keymaps
 
@@ -24,6 +24,17 @@ This is a personalized Neovim configuration built on top of [LazyVim](https://gi
 | `<leader>ar` | Resume previous Claude session |
 | `<leader>as` | Send visual selection to Claude |
 | `<leader>aa` | Accept Claude's diff changes |
+
+### AI (OpenCode)
+| Binding | Description |
+| --- | --- |
+| `<leader>ot` | Toggle OpenCode |
+| `<leader>oa` | Ask OpenCode |
+| `<leader>ox` | Execute OpenCode action |
+| `go` | Add range to OpenCode (operator) |
+| `goo` | Add line to OpenCode |
+| `<leader>ou` | OpenCode half page up |
+| `<leader>od` | OpenCode half page down |
 
 ### Diagnostics & Clipboard
 | Binding | Description |
@@ -43,7 +54,7 @@ This is a personalized Neovim configuration built on top of [LazyVim](https://gi
 
 ## ⚙️ Configuration Details
 
-- **Clipboard**: Neovim registers are **kept separate** from the system clipboard (`vim.opt.clipboard = ""`). Use the `<F13>`/`<F14>` mappings for system-level copy/paste.
+- **Clipboard**: Uses default LazyVim clipboard behavior. Additional `<F13>`/`<F14>` mappings are available for explicit system clipboard operations.
 - **Formatting**: Autoformatting on save is **disabled** by default (`vim.g.autoformat = false`).
 - **LSP Servers**: 
   - Python: `ty` (Pyright is disabled).
