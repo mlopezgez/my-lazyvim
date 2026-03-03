@@ -6,7 +6,7 @@ return {
         show_in_visual = true,
         show_in_insert = true,
         prefix = " ",
-        template = "<author> • <author-time> • <summary>",
+        template = "<author> • <author-time>",
         date = {
           relative = true,
           format = "%d-%m-%y",
